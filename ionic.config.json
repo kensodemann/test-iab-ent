@@ -1,0 +1,7 @@
+{
+  "name": "test-iab-ent",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
