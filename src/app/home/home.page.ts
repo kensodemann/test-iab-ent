@@ -10,6 +10,15 @@ export class HomePage {
   constructor(private iab: InAppBrowser) {}
 
   open(target?: string) {
-    this.iab.create('https://www.google.com', target).show();
+    console.log('open iab', target);
+    this.iab
+      .create('https://www.google.com', target, {
+        hidden: 'no',
+        clearcache: 'yes',
+        clearsessioncache: 'yes',
+        toolbarposition: 'top',
+        location: 'yes'
+      })
+      .show();
   }
 }
